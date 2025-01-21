@@ -9,121 +9,121 @@ Welcome to **Geno**, a decentralized token and NFT minting platform built on the
 - [Geno: Token and NFT Minting Platform on Solana](#geno-token-and-nft-minting-platform-on-solana)
   - [Table of Contents](#table-of-contents)
   - [Getting Started](#getting-started)
+  - [Follow these instructions to set up Geno locally for development and testing purposes.](#follow-these-instructions-to-set-up-geno-locally-for-development-and-testing-purposes)
   - [Prerequisites](#prerequisites)
-- [or](#or)
-- [or](#or-1)
+  - [Installation](#installation)
+  - [Environment Variables](#environment-variables)
+  - [Running the Application Locally](#running-the-application-locally)
+  - [Screenshots](#screenshots)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ---
 
 ## Getting Started
-
 Follow these instructions to set up Geno locally for development and testing purposes.
-
 ---
 
+
 ## Prerequisites
-
-Make sure you have the following installed:
-
-- **Node.js** (v16 or higher)
+ Make sure you have the following installed:
+**Node.js** (v16 or higher)
 - **npm** or **yarn**
 - **Git**
 - **Solana CLI** (optional, for blockchain interaction)
+  
 
-To verify installation:
+  To verify installation:
 ```bash
 node -v
 npm -v
 solana --version
-Installation
+```
+
+## Installation
 Clone the Repository:
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/geno.git
+
+ 
+```bash 
+git clone https://github.com/stillcyb3rnaut/geno.git
+
+```
 Navigate to the Project Directory:
-bash
-Copy
-Edit
+
+```bash 
 cd geno
+
+```
 Install Dependencies:
-bash
-Copy
-Edit
+
+```bash 
 npm install
 # or
 yarn install
-Environment Variables
-Create a .env.local file in the root directory of the project. Add the following environment variables:
 
-env
-Copy
-Edit
-NEXT_PUBLIC_SOLANA_NETWORK=devnet  # or 'mainnet-beta' for production
-NEXT_PUBLIC_RPC_ENDPOINT=https://api.devnet.solana.com
-WALLET_PRIVATE_KEY=your_private_key_here
-Replace NEXT_PUBLIC_SOLANA_NETWORK with the desired Solana network.
-Replace NEXT_PUBLIC_RPC_ENDPOINT with your Solana RPC URL.
-Replace WALLET_PRIVATE_KEY with the private key of your wallet.
-Note: Keep your private key secure and never share it publicly.
+```
 
-Running the Application Locally
+
+
+## Environment Variables
+
+No Env
+
+## Running the Application Locally
+
+
 Start the Development Server:
-bash
-Copy
-Edit
-npm run dev
+
+
+```bash 
+ npm run dev
 # or
 yarn dev
+```
 Access the Application:
-Open your browser and navigate to:
 
-arduino
-Copy
-Edit
-http://localhost:3000
-Screenshots
-Desktop View
-Home Page
+Open your browser and navigate to: http://localhost:3000
 
-Minting Page
 
-Mobile View
-Home Page
 
-Minting Page
 
-Contributing
-We welcome contributions to Geno! To contribute:
+## Screenshots
+Mint tokens
+![Web Screenshot](https://res.cloudinary.com/dde0qo4wb/image/upload/v1737446429/geno/Screenshot_from_2025-01-21_13-29-52_mszwnf.png)
+
+Track your tokens
+![app Screenshot](https://res.cloudinary.com/dde0qo4wb/image/upload/v1737446560/geno/Screenshot_from_2025-01-21_13-32-29_dtqfin.png)
+
+
+
+
+## Contributing
+Feel free to contribute to Geno! To contribute:
 
 Fork the repository.
+
 Create a new branch:
-bash
-Copy
-Edit
+
+```bash 
 git checkout -b feature/your-feature-name
+
+```
 Commit your changes:
-bash
-Copy
-Edit
+```bash 
 git commit -m "Add your message here"
+
+```
+ 
 Push to your branch:
-bash
-Copy
-Edit
+```bash 
+ 
 git push origin feature/your-feature-name
+```
+
 Open a pull request.
-License
+
+
+
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-sql
-Copy
-Edit
-
-You can copy and paste this into a file named `README.md`. Let me know if further edits are needed!
-
-
-
-
-
 
