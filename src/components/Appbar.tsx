@@ -12,7 +12,7 @@ export default function Appbar() {
   return (
     <div className=' bg-slate-950 p-3 flex justify-between'>
 <div className='text-slate-400 text-2xl'>
-    Solgen
+    GENO
 </div>
 
 
