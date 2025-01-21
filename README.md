@@ -2,6 +2,9 @@
 
 Welcome to **Geno**, a decentralized token and NFT minting platform built on the Solana blockchain. This repository contains a Next.js application that enables users to mint tokens and NFTs efficiently and securely.
 
+![landing page](https://res.cloudinary.com/dde0qo4wb/image/upload/v1737451763/geno/kffp0hpd28ralpm50dlq.png)
+
+
 ---
 
 ## Table of Contents
