@@ -1,68 +1,129 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`c3`](https://developers.cloudflare.com/pages/get-started/c3).
+# Geno: Token and NFT Minting Platform on Solana
+
+Welcome to **Geno**, a decentralized token and NFT minting platform built on the Solana blockchain. This repository contains a Next.js application that enables users to mint tokens and NFTs efficiently and securely.
+
+---
+
+## Table of Contents
+
+- [Geno: Token and NFT Minting Platform on Solana](#geno-token-and-nft-minting-platform-on-solana)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+- [or](#or)
+- [or](#or-1)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to set up Geno locally for development and testing purposes.
 
+---
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (v16 or higher)
+- **npm** or **yarn**
+- **Git**
+- **Solana CLI** (optional, for blockchain interaction)
+
+To verify installation:
 ```bash
+node -v
+npm -v
+solana --version
+Installation
+Clone the Repository:
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/geno.git
+Navigate to the Project Directory:
+bash
+Copy
+Edit
+cd geno
+Install Dependencies:
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+Environment Variables
+Create a .env.local file in the root directory of the project. Add the following environment variables:
+
+env
+Copy
+Edit
+NEXT_PUBLIC_SOLANA_NETWORK=devnet  # or 'mainnet-beta' for production
+NEXT_PUBLIC_RPC_ENDPOINT=https://api.devnet.solana.com
+WALLET_PRIVATE_KEY=your_private_key_here
+Replace NEXT_PUBLIC_SOLANA_NETWORK with the desired Solana network.
+Replace NEXT_PUBLIC_RPC_ENDPOINT with your Solana RPC URL.
+Replace WALLET_PRIVATE_KEY with the private key of your wallet.
+Note: Keep your private key secure and never share it publicly.
+
+Running the Application Locally
+Start the Development Server:
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Access the Application:
+Open your browser and navigate to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+arduino
+Copy
+Edit
+http://localhost:3000
+Screenshots
+Desktop View
+Home Page
 
-## Cloudflare integration
+Minting Page
 
-Besides the `dev` script mentioned above `c3` has added a few extra scripts that allow you to integrate the application with the [Cloudflare Pages](https://pages.cloudflare.com/) environment, these are:
-  - `pages:build` to build the application for Pages using the [`@cloudflare/next-on-pages`](https://github.com/cloudflare/next-on-pages) CLI
-  - `preview` to locally preview your Pages application using the [Wrangler](https://developers.cloudflare.com/workers/wrangler/) CLI
-  - `deploy` to deploy your Pages application using the [Wrangler](https://developers.cloudflare.com/workers/wrangler/) CLI
+Mobile View
+Home Page
 
-> __Note:__ while the `dev` script is optimal for local development you should preview your Pages application as well (periodically or before deployments) in order to make sure that it can properly work in the Pages environment (for more details see the [`@cloudflare/next-on-pages` recommended workflow](https://github.com/cloudflare/next-on-pages/blob/main/internal-packages/next-dev/README.md#recommended-development-workflow))
+Minting Page
 
-### Bindings
+Contributing
+We welcome contributions to Geno! To contribute:
 
-Cloudflare [Bindings](https://developers.cloudflare.com/pages/functions/bindings/) are what allows you to interact with resources available in the Cloudflare Platform.
+Fork the repository.
+Create a new branch:
+bash
+Copy
+Edit
+git checkout -b feature/your-feature-name
+Commit your changes:
+bash
+Copy
+Edit
+git commit -m "Add your message here"
+Push to your branch:
+bash
+Copy
+Edit
+git push origin feature/your-feature-name
+Open a pull request.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-You can use bindings during development, when previewing locally your application and of course in the deployed application:
+sql
+Copy
+Edit
 
-- To use bindings in dev mode you need to define them in the `next.config.js` file under `setupDevBindings`, this mode uses the `next-dev` `@cloudflare/next-on-pages` submodule. For more details see its [documentation](https://github.com/cloudflare/next-on-pages/blob/05b6256/internal-packages/next-dev/README.md).
+You can copy and paste this into a file named `README.md`. Let me know if further edits are needed!
 
-- To use bindings in the preview mode you need to add them to the `pages:preview` script accordingly to the `wrangler pages dev` command. For more details see its [documentation](https://developers.cloudflare.com/workers/wrangler/commands/#dev-1) or the [Pages Bindings documentation](https://developers.cloudflare.com/pages/functions/bindings/).
 
-- To use bindings in the deployed application you will need to configure them in the Cloudflare [dashboard](https://dash.cloudflare.com/). For more details see the  [Pages Bindings documentation](https://developers.cloudflare.com/pages/functions/bindings/).
 
-#### KV Example
 
-`c3` has added for you an example showing how you can use a KV binding.
 
-In order to enable the example:
-- Search for javascript/typescript lines containing the following comment:
-  ```ts
-  // KV Example:
-  ```
-  and uncomment the commented lines below it.
-- Do the same in the `wrangler.toml` file, where
-  the comment is:
-  ```
-  # KV Example:
-  ```
-- If you're using TypeScript run the `cf-typegen` script to update the `env.d.ts` file:
-  ```bash
-  npm run cf-typegen
-  # or
-  yarn cf-typegen
-  # or
-  pnpm cf-typegen
-  # or
-  bun cf-typegen
-  ```
 
-After doing this you can run the `dev` or `preview` script and visit the `/api/hello` route to see the example in action.
-
-Finally, if you also want to see the example work in the deployed application make sure to add a `MY_KV_NAMESPACE` binding to your Pages application in its [dashboard kv bindings settings section](https://dash.cloudflare.com/?to=/:account/pages/view/:pages-project/settings/functions#kv_namespace_bindings_section). After having configured it make sure to re-deploy your application.
