@@ -9,6 +9,7 @@ Welcome to **Geno**, a decentralized token and NFT minting platform built on the
 
 ## Table of Contents
 
+ 
 - [Geno: Token and NFT Minting Platform on Solana](#geno-token-and-nft-minting-platform-on-solana)
   - [Table of Contents](#table-of-contents)
   - [Getting Started](#getting-started)
