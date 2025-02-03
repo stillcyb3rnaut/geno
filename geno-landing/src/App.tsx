@@ -8,11 +8,11 @@ function App() {
       <header className="container mx-auto px-4 py-16">
         <nav className="flex justify-between items-center mb-16">
           <div className="flex items-center space-x-2">
-            <Coins className="w-8 h-8 text-blue-400" />
+            
             <span className="text-2xl font-bold">geno</span>
           </div>
           <div className="flex space-x-6">
-            <a href="https://geno.aikyam.live/" className="hover:text-blue-400 transition-colors">Web Platform</a>
+            <a href="https://geno.aikyam.live/" className="hover:text-blue-400 transition-colors">Try on web</a>
             <a href="#features" className="hover:text-blue-400 transition-colors">Features</a>
             <a href="#download" className="hover:text-blue-400 transition-colors">Download</a>
           </div>
@@ -68,17 +68,18 @@ function App() {
           <div className="flex justify-center space-x-4">
             <a 
               href="https://apps.apple.com" 
-              className="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg flex items-center space-x-2 transition-colors"
+              className="bg-gray-800 hover:transition-transform  flex items-center transition-colors"
             >
-              <Apple className="w-6 h-6" />
-              <span>App Store</span>
+               <img  src='https://res.cloudinary.com/dde0qo4wb/image/upload/v1738613489/geno/i0vauv2p5qtiprkzzfku.png'/>
+              
             </a>
             <a 
               href="https://play.google.com" 
-              className="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg flex items-center space-x-2 transition-colors"
+              className="bg-gray-800 hover:transition-transform  flex items-center  transition-colors"
             >
-              <PlaySquare className="w-6 h-6" />
-              <span>Play Store</span>
+            
+              <img  src='https://res.cloudinary.com/dde0qo4wb/image/upload/v1738613497/geno/kyxsylg6lyg1tuaitxso.png'/>
+               
             </a>
           </div>
         </div>
@@ -87,7 +88,17 @@ function App() {
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8">
         <div className="container mx-auto px-4 text-center text-gray-400">
-          <p>© 2024 Geno. All rights reserved.</p>
+          <p>© 2025 {" "} 
+          <a
+    href="https://ai-kyam.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:underline transition-colors"
+  >
+    aikyam
+  </a>
+            
+            . All rights reserved.</p>
         </div>
       </footer>
     </div>
